@@ -22,5 +22,16 @@ public class MainClass {
                 System.out.println(p.getName() + " lose");
             }
         }
+        System.out.println("------------------Course------------------------");
+        Course c = new Course(new Obstacle[]{new Cross(50),new Wall(50),new Water(50)});
+        c.start(team1);
+
+
+        System.out.println("--------------------Team----------------------");
+
+        Team team1 = new Team(new Animal[]{new Cat("Кот1"),new Cat("Кот2"), new Dog("Пес1"), new Dog("Пес2")});
+        team1.showResults();
+
+
     }
 }
