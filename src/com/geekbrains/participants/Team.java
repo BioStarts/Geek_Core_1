@@ -3,6 +3,11 @@ package com.geekbrains.participants;
 public class Team {
 
     String tname;
+
+    public Participant[] getArrayteam() {
+        return Arrayteam;
+    }
+
     public Participant[] Arrayteam;
 
     public Team(String tname, Participant[] Arrayteam){
